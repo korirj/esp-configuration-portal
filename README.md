@@ -17,6 +17,11 @@ A web based UI built using ESPUI for configuring sensor parameters.
 
 
 ## General Information
+This project is used to make a configuration portal to make dynamic  entries such as 
+- wifi networks
+- sensor Id
+- APIs 
+- This project demonstrates how to Configure an mq2 gas sensor with a nodemcu(esp8266 based controller), whenever a sensor reading above the threshold is recorded, The controller sends a notification to whatsapp using the <a href= "https://www.callmebot.com">Callmebot</a>
 - Provide general information about your project here.
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
