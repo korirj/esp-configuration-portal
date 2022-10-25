@@ -17,22 +17,31 @@ A web based UI built using ESPUI for configuring sensor parameters.
 
 
 ## General Information
-This project is used to make a configuration portal to make dynamic  entries such as 
+Have you ever gone through trouble when configuring sensor details whwnever you change a network or location of a device built in arduino using Low cost ESP32 or ESP8266 controllers? This project is used to make a configuration portal to make dynamic  entries such as 
 - wifi networks
 - sensor Id
 - APIs 
+
 This project demonstrates how to Configure an mq2 gas sensor with a nodemcu(esp8266 based controller), whenever a sensor reading above the threshold is recorded, The controller sends a notification to whatsapp using the <a href= "https://www.callmebot.com">Callmebot</a>
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+
+Hardware Equipment used include
+- ESP8266 development board - Wemos D1 R1
+- mq2 sensor 
+- breadboard
+- jumper wires
+- usb cable - to upload code
+
+Software libraries used include:
+- <a href="https://github.com/s00500/ESPUI">ESPUI - version 2.2.1</a>
+- <a href="https://github.com/s00500/ESPUI">Arduino JSON - version 6.19.3</a>
+- <a href="https://github.com/me-no-dev/ESPAsyncTCP">ESPAsyncTCP - version 2.2.1</a>
+- <a href="https://github.com/esphome/ESPAsyncWebServer">ESPAsyncWebServer - version 3.0.0</a>
+
 
 
 ## Features
