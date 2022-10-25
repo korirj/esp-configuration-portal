@@ -14,13 +14,9 @@ String tobesend;
 
 #define sensorPin A0
 
- 
-const char *WIFI_SSID = "inet";
-const char *WIFI_PASSWORD = "maxfactor";
-const char *URL = "http://192.168.1.114/landslide/inc/dbwrite.php";
+
 const char* mqtt_server = "broker.mqttdashboard.com";
 
-String sendval, sendval2, postData;
 
 #define WIFI_CRED_LENGTH 21                     
 
@@ -30,7 +26,7 @@ char UI_ssid_ca[WIFI_CRED_LENGTH] = "sensorConfig";
 char WN_ssid_ca[WIFI_CRED_LENGTH] = {};         //   -setup SSID for the local Wifi network. leave empty for web interface setup!
 char WN_password_ca[WIFI_CRED_LENGTH] = {};     //   -setup password
 const char * charPtr;
-const char *UI_password = "maxfactor";
+const char *UI_password = "ChangeMe1";
 const char *WN_ssid = WN_ssid_ca;
 const char *UI_ssid = UI_ssid_ca;
 const char *WN_password = WN_password_ca;
@@ -462,9 +458,9 @@ void loop() {
       HTTPClient http; //Declare an object of class HTTPClient
       //Specify request destination
       tobesend = "http://api.callmebot.com/whatsapp.php?";
-      tobesend = tobesend + "phone="+ UI_sw_EEPROM.phone;     //254700484976
+      tobesend = tobesend + "phone="+ UI_sw_EEPROM.phone;    // your phone number without ' + ' eg for +254-712-345-678 write 254712345678
       tobesend = tobesend + "&text=Critical+CO+level+at+:" + sensorPinValue;
-      tobesend = tobesend + "&apikey="+ UI_sw_EEPROM.apiKey ;  // 6254698
+      tobesend = tobesend + "&apikey="+ UI_sw_EEPROM.apiKey ;  
       Serial.println(tobesend);
       http.begin(clients,tobesend); 
       int httpCode = http.GET(); //Send the request
