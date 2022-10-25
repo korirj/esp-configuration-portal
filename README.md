@@ -65,12 +65,6 @@ List the ready features here:
 ## Setup
 As earlier stated above, the project relies on the libraries listed above.
 The easiest way to get started is using the arduino IDE. 
-You can find these Libraries  in the Arduino IDE library manager.
- open your arduino IDE and Go to 
- `Sketch > Include Library > Library Manager`
- search for `ESPUI` and install. ( Arduino prompts you to install additional libraries. click yes, install additional libraries
-
-If you cannot use the Library Manager, you can download the repositories and follow the [instructions](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library) to manually install libraries.
 
 In the arduino setup() routine the interface can be customised by adding UI Elements. For our case we shall use :
 - 2 instances of a button, one for restart and the other for submiting the configuration
@@ -96,7 +90,10 @@ Remember, whenever yoa add an element that needs to be persistent, make sure to 
 *  restart Arduino IDE.
 *  Setup ESP8266 Support - Select your board from `Tools->Board` dropdown Config the Board menu 
 *  Choose the right Port for your device. 
-*  Now just proceed as the Arduino: Start your sketching!
+*  Install required libraries You can find these Libraries  in the Arduino IDE library manager. open your arduino IDE and Go to  `Sketch > Include Library > Library Manager`  search for `ESPUI` and install. ( Arduino prompts you to install additional libraries. click yes, install additional libraries
+*  If you cannot use the Library Manager, you can download the repositories and follow the [instructions](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library) to manually install libraries.
+*  Clone this repository using the command  ``` git clone  ```
+
 
 
 
