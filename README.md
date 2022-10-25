@@ -92,7 +92,7 @@ Remember, whenever yoa add an element that needs to be persistent, make sure to 
 * Connect the circuit as shown inthe figure below
 * Connect Your NodeMCU to the Computer- Use the USB cable to connect your NodeMCU to the computer
 *  Install the COM/Serial Port Driver - z For CP2102 you can download and install the driver [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers): The NodeMCUv0.9 comes with the CH340 serial chip that can be downloaded [here](https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers) 
-*  Install the Arduino IDE 1.6.4 or Greater -Download Arduino IDE from Arduino.cc 
+*  Install the Arduino IDE 1.6.4 or Greater -Download Arduino IDE from [Arduino official website]( https://www.arduino.cc)
 *  Install the ESP8266 Board Package on arduino  Open ` Arduino IDE–>File–>Perferences–>Settings).`
 *  Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json`into Additional Board Manager then click OK.
 *  use the Board Manager to install the ESP8266 package Enter the `Arduino IDE–>Tools–>Boards –> Boards Manager` and type `Esp8266` on the search bar. A module called “esp8266 by esp8266 Community” will show , select the latest version and click “Install“. The ESP8266 package has benn installed successfully.
