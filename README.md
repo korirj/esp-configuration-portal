@@ -37,19 +37,23 @@ Hardware Equipment used include
 - usb cable - to upload code
 
 Software libraries used include:
-- <a href="https://github.com/s00500/ESPUI">ESPUI - version 2.2.1</a>
-- <a href="https://github.com/s00500/ESPUI">Arduino JSON - version 6.19.3</a>
-- <a href="https://github.com/me-no-dev/ESPAsyncTCP">ESPAsyncTCP - version 2.2.1</a>
-- <a href="https://github.com/esphome/ESPAsyncWebServer">ESPAsyncWebServer - version 3.0.0</a>
-
+- <a href="https://github.com/s00500/ESPUI">ESPUI </a>- version 2.2.1
+- <a href="https://github.com/s00500/ESPUI">Arduino JSON </a>- version 6.19.3
+- <a href="https://github.com/me-no-dev/ESPAsyncTCP">ESPAsyncTCP </a>- version 2.2.1
+- <a href="https://github.com/esphome/ESPAsyncWebServer">ESPAsyncWebServer</a> - version 3.0.0
+- <a href= "https://github.com/knolleary/pubsubclient">PubSubClient </a> - version 2.8.0
+-
+Other platforms used include
+- <a href= "https://www.callmebot.com">CallMeBot api</a>
+- <a href= "http://www.hivemq.com/demos/websocket-client/">Hive MQTT Broker </a>
 
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
+- Whatsapp messenger notification
+- Scan for available wifi networks
+- wifi password configuration
+- mqtt connection to connect to external applications
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
@@ -57,6 +61,12 @@ List the ready features here:
 
 
 ## Setup
+You can find this Library in the Arduino IDE library manager. Go to 'Sketch > Include Library > Library Manager' search for 'ESPUI' and install.
+
+If you cannot use the Library Manager, you can download the repository and follow the instructions to manually install libraries.
+
+
+
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
 Proceed to describe how to install / setup one's local environment / get started with the project.
