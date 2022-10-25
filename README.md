@@ -92,7 +92,7 @@ Remember, whenever yoa add an element that needs to be persistent, make sure to 
 *  Choose the right Port for your device. 
 *  Install required libraries You can find these Libraries  in the Arduino IDE library manager. open your arduino IDE and Go to  `Sketch > Include Library > Library Manager`  search for `ESPUI` and install. ( Arduino prompts you to install additional libraries. click yes, install additional libraries
 *  If you cannot use the Library Manager, you can download the repositories and follow the [instructions](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library) to manually install libraries.
-*  Clone this repository using the command  ''' git clone https://github.com/korirj/esp-configuration-portal.git '''  or download this repository as a zip file and extract it.
+*  Clone this repository using the command  ``` git clone https://github.com/korirj/esp-configuration-portal.git ``` or download this repository as a zip file and extract it.
 *  Open the folder to which you dextracted it and open `webserverConfig`
 *  Click Upload on your arduino IDE or use `Ctrl + U` to upload the code from Arduino IDE.
 *  THe code will be compiled and uploaded to your board, (This may take some time). Once It is complete,It will write Done Uploading on the bottom left side of your screen
@@ -101,7 +101,7 @@ Remember, whenever yoa add an element that needs to be persistent, make sure to 
 *  `192.168.4.2`
 *  A portal will be provided for you to choose your Wifi network, password,  sensor ID, callmebot API key and your phone number. then click the submit button.
 *  The microcontroller will restart and connect to the wifi network.
-*  To confirm sensor readings, You can go to the Hive MQ broker and subscribe to the topic used as your sensor ID, your sensor reading s will begin to stream in . 
+*  To confirm sensor readings, You can go to the [Hive MQ broker](http://www.hivemq.com/demos/websocket-client/) and subscribe to the topic used as your sensor ID, your sensor reading s will begin to stream in . 
 *  In case you need to check anything, you can use the serial monitor to confirm the readings from your sensors.
 
 
