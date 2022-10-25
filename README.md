@@ -72,7 +72,7 @@ In the arduino setup() routine the interface can be customised by adding UI Elem
  - one for password ( automatically replaced with `*` 
  - the second for SensorId  which is used as MQTT Topic 
  - third for callmebot api key 
- - the last for your phone number to receive whatsapp message 
+ - the last for your phone number to receive whatsapp message  <strong>your phone number without ' + ' eg for +254-712-345-678 write 254712345678</strong>
 - 1 dropdown menu to display all available Wifi Networks
 each of the above elements in the interface calls a  Callback function when changed. 
 To separate different events, event name is passed to the callback function that can be handled in a switch(){}case{} statement. 
