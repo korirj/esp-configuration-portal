@@ -86,6 +86,17 @@ To separate different events, event name is passed to the callback function that
 Remember, whenever yoa add an element that needs to be persistent, make sure to include its handler callback , modify the struct that holds the configurationand thets all.
 
 ## Usage
+* Connect the circuit as shown inthe figure below
+* Connect Your NodeMCU to the Computer- Use the USB cable to connect your NodeMCU to the computer
+*  Install the COM/Serial Port Driver - z For CP2102 you can download and install the driver [here](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers): The NodeMCUv0.9 comes with the CH340 serial chip that can be downloaded [here](https://github.com/nodemcu/nodemcu-devkit/tree/master/Drivers) 
+*  Install the Arduino IDE 1.6.4 or Greater -Download Arduino IDE from Arduino.cc 
+*  Install the ESP8266 Board Package on arduino  Open ` Arduino IDE–>File–>Perferences–>Settings).`
+*  Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json`into Additional Board Manager then click OK.
+*  use the Board Manager to install the ESP8266 package Enter the `Arduino IDE–>Tools–>Boards –> Boards Manager` and type `Esp8266` on the search bar. A module called “esp8266 by esp8266 Community” will show , select the latest version and click “Install“. The ESP8266 package has benn installed successfully.
+*  restart Arduino IDE.
+*  Setup ESP8266 Support - Select your board from `Tools->Board` dropdown Config the Board menu 
+*  Choose the right Port for your device. 
+*  Now just proceed as the Arduino: Start your sketching!
 
 
 
@@ -113,9 +124,5 @@ Give credit here.
 ## Contact
 Created by [@korir](https://japhethkorir.netlify.app/) - feel free to contact me!
 
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+## Licence
+ licensed with GNU General Public License Version 3.0 (which means, if you use it in a product somewhere, you need to make the source and all your modifications available to the receiver of such product so that they have the freedom to adapt and improve).
