@@ -72,35 +72,25 @@ You can find these Libraries  in the Arduino IDE library manager.
 
 If you cannot use the Library Manager, you can download the repositories and follow the [instructions](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library) to manually install libraries.
 
+In the arduino setup() routine the interface can be customised by adding UI Elements. For our case we shall use :
+- 2 instances of a button, one for restart and the other for submiting the configuration
+- 3 textboxes:
+ - one for password ( automatically replaced with `*` 
+ - the second for SensorId  which is used as MQTT Topic 
+ - third for callmebot api key 
+ - the last for your phone number to receive whatsapp message 
+- 1 dropdown menu to display all available Wifi Networks
+each of the above elements in the interface calls a  Callback function when changed. 
+To separate different events, event name is passed to the callback function that can be handled in a switch(){}case{} statement. 
 
-
-
-
+Remember, whenever yoa add an element that needs to be persistent, make sure to include its handler callback , modify the struct that holds the configurationand thets all.
 
 ## Usage
 
 
 
-
-
-
-
-
-
-
-
-
-
-In the arduino setup() routine the interface can be customised by adding UI Elements. This is done by calling the corresponding library methods on the Library object ESPUI. Eg: ESPUI.button("button", &myCallback); creates a button in the interface that calls the myCallback(Control *sender, int eventname) function when changed. All buttons and items call their callback whenever there is a state change from them. This means the button will call the callback when it is pressed and also again when it is released. To separate different events, an integer number with the event name is passed to the callback function that can be handled in a switch(){}case{} statement. 
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
-
 ## Project Status
-Project is: _in progress_ . For any changes please contact me at <mail>jephekipa@gmail.com.</mail>
-
+Project is: _in progress_ . For any changes please [contact me ](https://japhethkorir.netlify.app/contact)
 
 ## Room for Improvement
 set threshold values
@@ -117,13 +107,11 @@ Connect to Home assistant and openhab:
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- Many thanks to [E](https://arduinodiy.wordpress.com/2021/07/14/sending-messages-through-signal/) for the tutorial on how to use the whatsapp API
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@korir](https://japhethkorir.netlify.app/) - feel free to contact me!
 
 
 <!-- Optional -->
