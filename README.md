@@ -54,6 +54,8 @@ List the ready features here:
 - Scan for available wifi networks
 - wifi password configuration
 - mqtt connection to connect to external applications
+- Use EEPROM to store sensor configuration
+- No wifi is required to configure the board
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
@@ -61,18 +63,35 @@ List the ready features here:
 
 
 ## Setup
-You can find this Library in the Arduino IDE library manager. Go to `Sketch > Include Library > Library Manager` search for `ESPUI` and install.
+As earlier stated above, the project relies on the libraries listed above.
+The easiest way to get started is using the arduino IDE. 
+You can find these Libraries  in the Arduino IDE library manager.
+ open your arduino IDE and Go to 
+ `Sketch > Include Library > Library Manager`
+ search for `ESPUI` and install. ( Arduino prompts you to install additional libraries. click yes, install additional libraries
 
-If you cannot use the Library Manager, you can download the repository and follow the [instructions](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library) to manually install libraries.
+If you cannot use the Library Manager, you can download the repositories and follow the [instructions](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library) to manually install libraries.
 
 
 
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
 
 
 ## Usage
+
+
+
+
+
+
+
+
+
+
+
+
+
+In the arduino setup() routine the interface can be customised by adding UI Elements. This is done by calling the corresponding library methods on the Library object ESPUI. Eg: ESPUI.button("button", &myCallback); creates a button in the interface that calls the myCallback(Control *sender, int eventname) function when changed. All buttons and items call their callback whenever there is a state change from them. This means the button will call the callback when it is pressed and also again when it is released. To separate different events, an integer number with the event name is passed to the callback function that can be handled in a switch(){}case{} statement. 
 How does one go about using it?
 Provide various use cases and code examples here.
 
@@ -80,19 +99,20 @@ Provide various use cases and code examples here.
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in progress_ . For any changes please contact me at <mail>jephekipa@gmail.com.</mail>
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+set threshold values
+- implement a slider to handle threshold values
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+Access the UI over your network Over IP:
+- Make the UI persistent even afterb connected to wiri
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
+
+Connect to Home assistant and openhab:
+- Implement webhooks for Hassio
+- Implement webhooks for Openhab
 
 
 ## Acknowledgements
