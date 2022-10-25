@@ -61,9 +61,9 @@ List the ready features here:
 
 
 ## Setup
-You can find this Library in the Arduino IDE library manager. Go to 'Sketch > Include Library > Library Manager' search for 'ESPUI' and install.
+You can find this Library in the Arduino IDE library manager. Go to `Sketch > Include Library > Library Manager` search for `ESPUI` and install.
 
-If you cannot use the Library Manager, you can download the repository and follow the instructions to manually install libraries.
+If you cannot use the Library Manager, you can download the repository and follow the [instructions](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/how-to-install-a-library) to manually install libraries.
 
 
 
