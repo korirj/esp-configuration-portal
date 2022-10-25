@@ -71,6 +71,7 @@ Allow callmebot to send you messages by sending the message below to `+34 644 66
 You should get a reply “New user registered”, followed by an API key
 
 It is now possible to send messages to your phone with `https:/api.callmebot.com/signal/send.php?phone=<yourphonenumber>&apikey=xxxxxx&text=This+is+a+test`
+
 As earlier stated above, the project relies on the libraries listed above.
 The easiest way to get started is using the arduino IDE. 
 
